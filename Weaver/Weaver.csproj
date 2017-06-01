@@ -6,6 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\lib\jstree\demo\**" />
+    <Compile Remove="wwwroot\lib\jstree\test\**" />
+    <Content Remove="wwwroot\lib\jstree\demo\**" />
+    <Content Remove="wwwroot\lib\jstree\test\**" />
+    <EmbeddedResource Remove="wwwroot\lib\jstree\demo\**" />
+    <EmbeddedResource Remove="wwwroot\lib\jstree\test\**" />
+    <None Remove="wwwroot\lib\jstree\demo\**" />
+    <None Remove="wwwroot\lib\jstree\test\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="wwwroot\css\AdminLTE.css" />
     <Content Include="wwwroot\css\AdminLTE.min.css" />
     <Content Include="wwwroot\css\alt\AdminLTE-bootstrap-social.css" />
@@ -79,6 +90,59 @@
     <Content Include="wwwroot\js\login.js" />
     <Content Include="wwwroot\js\pages\dashboard.js" />
     <Content Include="wwwroot\js\pages\dashboard2.js" />
+    <Content Include="wwwroot\lib\JsTree\.gitignore" />
+    <Content Include="wwwroot\lib\JsTree\bower.json" />
+    <Content Include="wwwroot\lib\JsTree\component.json" />
+    <Content Include="wwwroot\lib\JsTree\composer.json" />
+    <Content Include="wwwroot\lib\JsTree\dist\jstree.js" />
+    <Content Include="wwwroot\lib\JsTree\dist\jstree.min.js" />
+    <Content Include="wwwroot\lib\JsTree\dist\themes\default-dark\32px.png" />
+    <Content Include="wwwroot\lib\JsTree\dist\themes\default-dark\40px.png" />
+    <Content Include="wwwroot\lib\JsTree\dist\themes\default-dark\style.css" />
+    <Content Include="wwwroot\lib\JsTree\dist\themes\default-dark\style.min.css" />
+    <Content Include="wwwroot\lib\JsTree\dist\themes\default-dark\throbber.gif" />
+    <Content Include="wwwroot\lib\JsTree\dist\themes\default\32px.png" />
+    <Content Include="wwwroot\lib\JsTree\dist\themes\default\40px.png" />
+    <Content Include="wwwroot\lib\JsTree\dist\themes\default\style.css" />
+    <Content Include="wwwroot\lib\JsTree\dist\themes\default\style.min.css" />
+    <Content Include="wwwroot\lib\JsTree\dist\themes\default\throbber.gif" />
+    <Content Include="wwwroot\lib\JsTree\gruntfile.js" />
+    <Content Include="wwwroot\lib\JsTree\jstree.jquery.json" />
+    <Content Include="wwwroot\lib\JsTree\LICENSE-MIT" />
+    <Content Include="wwwroot\lib\JsTree\package.json" />
+    <Content Include="wwwroot\lib\JsTree\README.md" />
+    <Content Include="wwwroot\lib\JsTree\src\intro.js" />
+    <Content Include="wwwroot\lib\JsTree\src\jstree.changed.js" />
+    <Content Include="wwwroot\lib\JsTree\src\jstree.checkbox.js" />
+    <Content Include="wwwroot\lib\JsTree\src\jstree.conditionalselect.js" />
+    <Content Include="wwwroot\lib\JsTree\src\jstree.contextmenu.js" />
+    <Content Include="wwwroot\lib\JsTree\src\jstree.dnd.js" />
+    <Content Include="wwwroot\lib\JsTree\src\jstree.js" />
+    <Content Include="wwwroot\lib\JsTree\src\jstree.massload.js" />
+    <Content Include="wwwroot\lib\JsTree\src\jstree.search.js" />
+    <Content Include="wwwroot\lib\JsTree\src\jstree.sort.js" />
+    <Content Include="wwwroot\lib\JsTree\src\jstree.state.js" />
+    <Content Include="wwwroot\lib\JsTree\src\jstree.types.js" />
+    <Content Include="wwwroot\lib\JsTree\src\jstree.unique.js" />
+    <Content Include="wwwroot\lib\JsTree\src\jstree.wholerow.js" />
+    <Content Include="wwwroot\lib\JsTree\src\misc.js" />
+    <Content Include="wwwroot\lib\JsTree\src\outro.js" />
+    <Content Include="wwwroot\lib\JsTree\src\sample.js" />
+    <Content Include="wwwroot\lib\JsTree\src\themes\base.less" />
+    <Content Include="wwwroot\lib\JsTree\src\themes\default-dark\32px.png" />
+    <Content Include="wwwroot\lib\JsTree\src\themes\default-dark\40px.png" />
+    <Content Include="wwwroot\lib\JsTree\src\themes\default-dark\style.css" />
+    <Content Include="wwwroot\lib\JsTree\src\themes\default-dark\style.less" />
+    <Content Include="wwwroot\lib\JsTree\src\themes\default-dark\throbber.gif" />
+    <Content Include="wwwroot\lib\JsTree\src\themes\default\32px.png" />
+    <Content Include="wwwroot\lib\JsTree\src\themes\default\40px.png" />
+    <Content Include="wwwroot\lib\JsTree\src\themes\default\style.css" />
+    <Content Include="wwwroot\lib\JsTree\src\themes\default\style.less" />
+    <Content Include="wwwroot\lib\JsTree\src\themes\default\throbber.gif" />
+    <Content Include="wwwroot\lib\JsTree\src\themes\main.less" />
+    <Content Include="wwwroot\lib\JsTree\src\themes\mixins.less" />
+    <Content Include="wwwroot\lib\JsTree\src\themes\responsive.less" />
+    <Content Include="wwwroot\lib\JsTree\src\vakata-jstree.js" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Localization.AspNetCore.TagHelpers" Version="0.3.0" />
@@ -98,6 +162,7 @@
     <PackageReference Include="microsoft.extensions.configuration.json" Version="1.1.2" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.2" />
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.1.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj" />
@@ -106,4 +171,12 @@
     <ProjectReference Include="..\Service\Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Menu\" />
+  </ItemGroup>
+  
 </Project>

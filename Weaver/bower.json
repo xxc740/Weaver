@@ -7,6 +7,8 @@
     "font-awesome": "Font-Awesome#v4.7.0",
     "iCheck": "1.0.2",
     "layer": "3.0.3",
-    "js-cookie": "v2.1.4"
+    "js-cookie": "v2.1.4",
+    "jstree": "3.3.4",
+    "bootstrap-paginator": "v0.5"
   }
 }

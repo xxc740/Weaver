@@ -18,6 +18,6 @@ namespace Service.MenuService
         void Delete(Guid Id);
 
         MenuServiceModel Get(Guid Id);
-        List<MenuServiceModel> GetMenuByUser(Guid userId);
+        //List<MenuServiceModel> GetMenuByUser(Guid userId);
     }
 }
