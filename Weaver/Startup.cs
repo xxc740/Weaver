@@ -14,6 +14,9 @@ using EntityFrameworkCore.Repositories;
 using Service;
 using Service.UserService;
 using Domain.IRepositories;
+using Service.MenuService;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
 
 namespace Weaver
 {
@@ -39,6 +42,8 @@ namespace Weaver
             services.AddDbContext<WeaverDbContext>(options => options.UseSqlServer(sqlConnectString, b => b.MigrationsAssembly("EntityFrameworkCore")));
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IMenuRepository, MenuRepository>();
+            services.AddScoped<IMenuService, MenuService>();
             services.AddMvc();
             services.AddSession();
         }
@@ -54,6 +59,11 @@ namespace Weaver
             }
 
             app.UseStaticFiles();
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory())
+            });
+            
             app.UseSession();
             app.UseMvc(routes=> {
                 routes.MapRoute(

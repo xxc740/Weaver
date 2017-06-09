@@ -86,8 +86,8 @@
     <Content Include="wwwroot\img\user8-128x128.jpg" />
     <Content Include="wwwroot\js\app.js" />
     <Content Include="wwwroot\js\app.min.js" />
-    <Content Include="wwwroot\js\demo.js" />
     <Content Include="wwwroot\js\login.js" />
+    <Content Include="wwwroot\js\menu.js" />
     <Content Include="wwwroot\js\pages\dashboard.js" />
     <Content Include="wwwroot\js\pages\dashboard2.js" />
     <Content Include="wwwroot\lib\JsTree\.gitignore" />
@@ -173,10 +173,6 @@
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Views\Menu\" />
   </ItemGroup>
   
 </Project>

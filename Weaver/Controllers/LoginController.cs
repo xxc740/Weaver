@@ -30,7 +30,7 @@ namespace Weaver.Controllers
                 if(user != null)
                 {
                     HttpContext.Session.Set("CurrentUser", ByteConvertHelper.ObjectToBytes(user));
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Menu");
                 }
 
                 ViewBag.ErrorInfo = "User Name or Password Incorrect";
